@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNIFF Coin - The Crypto That's Going to Make Your Nose Twitch!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: #FFD700;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .dog-img {
+            width: 200px;
+            animation: sniff 2s infinite;
+        }
+        @keyframes sniff {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        .cta-button {
+            background: #FF69B4;
+            padding: 15px 30px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 20px;
+            display: inline-block;
+        }
+        .contract-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px;
+            word-wrap: break-word;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐾 SNIFF Coin (SNIFF) 🐾</h1>
+        <img src="https://place-holder.com/200x200/dog" alt="Sniffing Dog" class="dog-img">
+        <h2>The Crypto That's Got Nose for Success!</h2>
+        
+        <div class="contract-box" onclick="copyAddress()">
+            <h3>Contract Address:</h3>
+            <p id="contractAddress">0xYOUR_CONTRACT_ADDRESS_HERE</p>
+            <small>(Click to copy!)</small>
+        </div>
+
+        <a href="https://pancakeswap.finance/swap?outputCurrency=YOUR_CONTRACT_ADDRESS" 
+           class="cta-button" 
+           target="_blank">
+            🐶 BUY SNIFF NOW! 🐶
+        </a>
+
+        <div class="info">
+            <h3>Why SNIFF?</h3>
+            <ul>
+                <li>100% Community Driven</li>
+                <li>No Rug Pulls - Liquidity Locked</li>
+                <li>Sniff-tastic Rewards System</li>
+                <li>Dog-approved Security</li>
+            </ul>
+        </div>
+
+        <div class="memes">
+            <h2>Meme Zone 🐕</h2>
+            <img src="https://place-holder.com/300x200/dog-meme" alt="SNIFF Meme">
+        </div>
+
+        <footer>
+            <p>Follow our smelly trail:</p>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="telegram-icon.png" alt="Telegram"></a>
+        </footer>
+    </div>
+
+    <script>
+        function copyAddress() {
+            const address = document.getElementById('contractAddress').innerText;
+            navigator.clipboard.writeText(address);
+            alert('Address copied to clipboard! Go sniff some SNIFF! 🐶');
+        }
+    </script>
+</body>
+</html>
