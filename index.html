@@ -3,11 +3,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SniffCoin</title>
+    <title>SniffCoin - We sniff it first</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .social-icons {
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            padding-top: 30px;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        #animationContainer {
+            position: relative;
+            width: 90%;
+            max-width: 700px;
+            height: 400px;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        #dog {
             position: absolute;
+            left: 0;
+            bottom: 20px;
+            width: 100px;
+            transition: left 4s ease-in-out;
+        }
+
+        #chart {
+            position: absolute;
+            right: 50px;
+            bottom: 20px;
+            width: 150px;
+            opacity: 0.5;
+            transition: opacity 1s, transform 1s;
+        }
+
+        #swapButton {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: limegreen;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .social-icons {
+            position: fixed;
             top: 20px;
             left: 20px;
             display: flex;
@@ -16,40 +80,67 @@
         }
 
         .pump-link {
-            position: absolute;
+            position: fixed;
             top: 20px;
             right: 20px;
         }
 
         .social-icons img,
         .pump-link img {
-            width: 32px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
             cursor: pointer;
+        }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px #000;
         }
     </style>
 </head>
 <body>
+    <div class="social-icons">
+        <a href="https://x.com/Sniffsniffcoin?t=g4E23a-Sk7C__1ZihrSf5A&s=09" target="_blank">
+            <img src="twitter.png" alt="Twitter">
+        </a>
+        <a href="https://t.me/sniffcoinclub" target="_blank">
+            <img src="telegram.png" alt="Telegram">
+        </a>
+    </div>
+    <div class="pump-link">
+        <a href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" target="_blank">
+            <img src="pumpfun.png" alt="Pump.fun">
+        </a>
+    </div>
+
+    <div class="header">We sniffed it first</div>
+
     <div id="animationContainer">
-        <div class="social-icons">
-            <a href="https://x.com/Sniffsniffcoin?t=g4E23a-Sk7C__1ZihrSf5A&s=09" target="_blank">
-                <img src="twitter.png" alt="Twitter">
-            </a>
-            <a href="https://t.me/sniffcoinclub" target="_blank">
-                <img src="telegram.png" alt="Telegram">
-            </a>
-        </div>
-        <div class="pump-link">
-            <a href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" target="_blank">
-                <img src="pumpfun.png" alt="Pump.fun">
-            </a>
-        </div>
         <img src="dog.gif" id="dog" alt="Sniffing Dog">
         <img src="chart.png" id="chart" alt="Crypto Chart">
         <a href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" target="_blank" id="swapButton" style="display:none;">
             <button>PUMPSWAP</button>
         </a>
     </div>
-    <script src="script.js"></script>
+
+    <div class="footer">SniffCoin is the future of sniffing memes</div>
+
+    <script>
+        window.onload = function() {
+            const dog = document.getElementById("dog");
+            const chart = document.getElementById("chart");
+            const button = document.getElementById("swapButton");
+
+            setTimeout(() => {
+                dog.style.left = "500px";
+                setTimeout(() => {
+                    chart.style.opacity = "1";
+                    chart.style.transform = "scale(1.3)";
+                    button.style.display = "inline-block";
+                }, 4000);
+            }, 1000);
+        };
+    </script>
 </body>
 </html>
