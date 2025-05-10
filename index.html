@@ -1,95 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SniffCoin - We Sniff First</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #1a1a2e;
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      background: #6a0dad;
-      padding: 40px 20px;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.1em;
-      opacity: 0.8;
-    }
-    .buy-button {
-      background: #ffcc00;
-      color: #000;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 20px;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-    footer {
-      background: #111;
-      padding: 20px;
-      font-size: 0.9em;
-      opacity: 0.6;
-    }
-    .socials a {
-      margin: 0 10px;
-      font-size: 1.1em;
-    }
-  </style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: url('assets/dog-bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-  }
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNIFF Coin - The Crypto That's Going to Make Your Nose Twitch!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background: #FFF9C4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .dog-image {
+            width: 170px; /* Final adjusted size */
+            margin: 15px auto;
+        }
+        .dog-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 4px solid #FFD700;
+        }
+        .cta-button {
+            background: #FFD700;
+            padding: 15px 30px;
+            border-radius: 25px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 20px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+            border: 2px solid #FFC107;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            background: #FFC107;
+        }
+        .contract-box {
+            background: #FFF59D;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px;
+            word-wrap: break-word;
+            cursor: pointer;
+            border: 2px solid #FFD700;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px;
+            padding: 10px;
+            background: #FFFDE7;
+            border-radius: 10px;
+            border: 2px solid #FFD700;
+        }
+        .social-icons {
+            margin: 20px;
+        }
+        .social-icons a {
+            color: #333;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #FF6B35;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>🐾 SNIFF Coin (SNIFF) 🐾</h1>
 
-  <header>
-    <h1>$SNIF - We Sniff First</h1>
-    <p>The meme coin with the best nose in crypto. Built on Solana.</p>
-    <a class="buy-button" href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" target="_blank">Buy $SNIF on Pump.fun</a>
-  </header>
+        <div class="dog-image">
+            <img src="https://i.imgur.com/CguiyPe.png?1" alt="SNIFF Coin Mascot">
+        </div>
 
-  <section>
-    <h2>About SniffCoin</h2>
-    <p>SniffCoin is a fun, community-powered meme token inspired by pure sniffing energy.  
-    It’s not just a coin — it’s a scent revolution.</p>
-  </section>
+        <h2>The Crypto That's Got Nose for Success!</h2>
 
-  <section class="socials">
-    <h2>Join the Pack</h2>
-    <p>
-      <a href="https://x.com/Sniffsniffcoin" target="_blank">Twitter</a> |
-      <a href="https://t.me/sniffcoinclub" target="_blank">Telegram</a> |
-      <a href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" target="_blank">Pump.fun</a>
-    </p>
-  </section>
+        <div class="contract-box" onclick="copyAddress()">
+            <h3>Contract Address:</h3>
+            <p id="contractAddress">4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump</p>
+            <small>(Click to copy!)</small>
+        </div>
 
-  <footer>
-    &copy; 2025 SniffCoin. All rights sniffed and reserved.
-  </footer>
+        <a href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" 
+           class="cta-button" 
+           target="_blank">
+            🐶 BUY SNIFF NOW! 🐶
+        </a>
 
+        <div class="info">
+            <h3>Why SNIFF?</h3>
+            <ul>
+                <li>100% Community Driven</li>
+                <li>No Rug Pulls - Liquidity Locked</li>
+                <li>Sniff-tastic Rewards System</li>
+                <li>Dog-approved Security</li>
+            </ul>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://x.com/Sniffsniffcoin" target="_blank" rel="noopener">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://t.me/sniffcoinclub" target="_blank" rel="noopener">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function copyAddress() {
+            const address = document.getElementById('contractAddress').innerText;
+            navigator.clipboard.writeText(address);
+            alert('Address copied to clipboard! Go sniff some SNIFF! 🐶');
+        }
+    </script>
 </body>
 </html>
