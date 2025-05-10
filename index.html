@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SniffCoin</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .pump-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .social-icons img,
+        .pump-link img {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="animationContainer">
+        <div class="social-icons">
+            <a href="https://x.com/Sniffsniffcoin?t=g4E23a-Sk7C__1ZihrSf5A&s=09" target="_blank">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+            <a href="https://t.me/sniffcoinclub" target="_blank">
+                <img src="telegram.png" alt="Telegram">
+            </a>
+        </div>
+        <div class="pump-link">
+            <a href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" target="_blank">
+                <img src="pumpfun.png" alt="Pump.fun">
+            </a>
+        </div>
+        <img src="dog.gif" id="dog" alt="Sniffing Dog">
+        <img src="chart.png" id="chart" alt="Crypto Chart">
+        <a href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" target="_blank" id="swapButton" style="display:none;">
+            <button>PUMPSWAP</button>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
