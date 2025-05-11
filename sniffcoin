@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNIF Coin - The Golden Retriever of Crypto</title>
+  <style>
+    :root {
+      --gold: #BEA72C;
+      --forest: #003525;
+      --cream: #FFF5D6;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--forest);
+      color: var(--cream);
+      font-family: 'Arial', sans-serif;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(-45deg, #003525, #002218, #001710, #003525);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      background-image: url('photo_5837121994674521729_y 1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-blend-mode: overlay;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .top-icons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--forest);
+      border: 2px solid var(--gold);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+      padding: 10px 15px;
+      border-radius: 15px;
+      z-index: 10;
+      display: flex;
+      gap: 15px;
+    }
+
+    .top-icons a {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .top-icons a:hover {
+      transform: scale(1.2);
+      color: var(--cream);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .story-card {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2rem;
+      border: 2px solid var(--gold);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .cta-button {
+      background: var(--gold);
+      color: var(--forest);
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 1rem 0;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(190, 167, 44, 0.4);
+      border-color: var(--cream);
+    }
+
+    .tokenomics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .token-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .token-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .media-block {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid var(--gold);
+      border-radius: 20px;
+      margin: 2rem 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .media-block img, .media-block video {
+      width: 100%;
+      display: block;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    .media-block p {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .top-icons {
+        top: 15px;
+        right: 15px;
+        padding: 6px 10px;
+        gap: 10px;
+      }
+
+      .cta-button {
+        width: 100%;
+      }
+
+      .story-card {
+        padding: 1.2rem;
+      }
+
+      .tokenomics-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="hero">
+    <div class="top-icons">
+      <a href="https://twitter.com/Sniffsniffcoin" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me/sniffcoinclub" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+
+    <div class="container">
+      <div class="story-card">
+        <h1>🐾 SNIF Coin - Follow the Scent to Success</h1>
+        <p>In the heart of the crypto forest, a golden-nosed retriever named SNIF uncovered the bone of prosperity.
+        SNIF Coin combines canine intuition with DeFi – because every good boy deserves financial freedom!</p>
+
+        <div class="tokenomics-grid">
+          <div class="token-card">
+            <h3>Total Supply</h3>
+            <p style="color: var(--gold)">1,000,000,000 SNIF</p>
+          </div>
+          <div class="token-card">
+            <h3>Tax</h3>
+            <p style="color: var(--gold)">0/0</p>
+          </div>
+          <div class="token-card">
+            <h3>Liquidity</h3>
+            <p style="color: var(--gold)">Locked 100 Years</p>
+          </div>
+        </div>
+
+        <a href="https://pump.fun/coin/4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump" class="cta-button" target="_blank">Buy on Pump.fun</a>
+        <div style="margin-top: 1rem;">
+          <p>Contract Address:<br>
+            <code style="color: var(--gold)">4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump</code>
+          </p>
+          <button class="cta-button" onclick="copyContract()">Copy Address</button>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <img src="https://media.giphy.com/media/mCRJDo24UvJMA/giphy.gif" alt="Sniffing Dog Meme">
+        <p>Sniffing out opportunities like never before.</p>
+      </div>
+
+      <div class="media-block">
+        <video autoplay muted loop>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        </video>
+        <p>Your nose knows. Trust the SNIF.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Follow Our Trail 🌲 
+      <a href="https://twitter.com/Sniffsniffcoin" style="color: var(--gold)">Twitter</a> | 
+      <a href="https://t.me/sniffcoinclub" style="color: var(--gold)">Telegram</a>
+    </p>
+  </footer>
+
+  <script>
+    function copyContract() {
+      const contract = "4CnG6AuCqqHJgE5EAf7KytuEgVrfJCk82Ju1Gbddpump";
+      navigator.clipboard.writeText(contract);
+      alert('Contract copied to clipboard! 🐶 Go fetch those SNIF tokens!');
+    }
+  </script>
+</body>
+</html>
